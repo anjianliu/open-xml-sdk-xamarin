@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OpenXmlAndroid.Zip
+namespace OpenXmlSdk.Xamarin.Zip
 {
     /// <summary>
     /// Unique class for compression/decompression file. Represents a Zip file.

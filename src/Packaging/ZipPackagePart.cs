@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using OpenXmlAndroid.Zip;
+using OpenXmlSdk.Xamarin.Zip;
 
 namespace OpenXmlSdk.Xamarin.Packaging
 {
