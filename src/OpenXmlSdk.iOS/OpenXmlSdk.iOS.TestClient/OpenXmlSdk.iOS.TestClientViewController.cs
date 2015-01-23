@@ -61,7 +61,7 @@ namespace OpenXmlSdk.iOS.TestClient
 			sender.SetTitle("You Clicked",UIControlState.Normal);
 			try
 			{
-				var doc = new WordprocessingDocument ();
+				var doc = new OpenSettings ();
 				if (doc != null) 
 				{
 					sender.SetTitle("Yes",UIControlState.Normal);
