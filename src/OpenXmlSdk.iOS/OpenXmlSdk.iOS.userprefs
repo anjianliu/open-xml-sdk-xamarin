@@ -1,0 +1,14 @@
+﻿<Properties StartupItem="OpenXmlSdk.iOS.TestClient/OpenXmlSdk.iOS.TestClient.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../Packaging/ZipPackage.cs">
+    <Files>
+      <File FileName="../Framework/MediaDataPart.cs" Line="36" Column="36" />
+      <File FileName="../Packaging/ZipPackage.cs" Line="13" Column="13" />
+      <File FileName="OpenXmlSdk.iOS/Zip/ZipStorer.cs" Line="33" Column="33" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

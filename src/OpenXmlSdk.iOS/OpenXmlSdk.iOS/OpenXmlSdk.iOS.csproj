@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{68196A39-C66D-4230-991A-2D0CB6E2E81F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>OpenXmlSdk.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>OpenXmlSdk.iOS</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="Framework\" />
+    <Folder Include="GeneratedCode\" />
+    <Folder Include="ofapi\" />
+    <Folder Include="Packaging\" />
+    <Folder Include="Zip\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="..\..\Framework\AlternateContent.cs">
+      <Link>Framework\AlternateContent.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Framework\ConformanceClasses.cs">
+      <Link>Framework\ConformanceClasses.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Framework\DataPartReferenceRelationship.cs">
+      <Link>Framework\DataPartReferenceRelationship.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Framework\ExceptionMessages.Designer.cs">
+      <Link>Framework\ExceptionMessages.Designer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Framework\IFixedTypePart.cs">
+      <Link>Framework\IFixedTypePart.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Framework\MediaDataPart.cs">
+      <Link>Framework\MediaDataPart.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Framework\NamespaceIdMap.cs">
+      <Link>Framework\NamespaceIdMap.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Framework\OpenXmlAttribute.cs">
+      <Link>Framework\OpenXmlAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Framework\OpenXmlBasePart.cs">
+      <Link>Framework\OpenXmlBasePart.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Framework\OpenXmlCompositeElement.cs">
+      <Link>Framework\OpenXmlCompositeElement.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Framework\OpenXmlElement.cs">
+      <Link>Framework\OpenXmlElement.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Framework\OpenXmlElement2.cs">
+      <Link>Framework\OpenXmlElement2.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Framework\OpenXmlElementContext.cs">
+      <Link>Framework\OpenXmlElementContext.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Framework\OpenXmlElementList.cs">
+      <Link>Framework\OpenXmlElementList.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Framework\OpenXmlLeafElement.cs">
+      <Link>Framework\OpenXmlLeafElement.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Framework\OpenXmlLeafTextElement.cs">
+      <Link>Framework\OpenXmlLeafTextElement.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Framework\OpenXmlNonElementNode.cs">
+      <Link>Framework\OpenXmlNonElementNode.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Framework\OpenXmlObsolete.cs">
+      <Link>Framework\OpenXmlObsolete.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Framework\OpenXmlPackage.cs">
+      <Link>Framework\OpenXmlPackage.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Framework\OpenXmlPartRootElement.cs">
+      <Link>Framework\OpenXmlPartRootElement.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Framework\OpenXmlReader.cs">
+      <Link>Framework\OpenXmlReader.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Framework\OpenXmlSimpleType.cs">
+      <Link>Framework\OpenXmlSimpleType.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Framework\OpenXmlUnknownElement.cs">
+      <Link>Framework\OpenXmlUnknownElement.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Framework\OpenXmlWriter.cs">
+      <Link>Framework\OpenXmlWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Framework\PartConstraintRule.cs">
+      <Link>Framework\PartConstraintRule.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Framework\PartContainer.cs">
+      <Link>Framework\PartContainer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Framework\PartExtensionProvider.cs">
+      <Link>Framework\PartExtensionProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Framework\Profiler.cs">
+      <Link>Framework\Profiler.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Framework\ReferenceRelationship.cs">
+      <Link>Framework\ReferenceRelationship.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Framework\RelationshipTypeList.cs">
+      <Link>Framework\RelationshipTypeList.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Framework\ReservedElementTypeIds.cs">
+      <Link>Framework\ReservedElementTypeIds.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Framework\UnknownPart.cs">
+      <Link>Framework\UnknownPart.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Framework\XmlDOMTextWriter.cs">
+      <Link>Framework\XmlDOMTextWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\O12UnionHelper.cs">
+      <Link>GeneratedCode\O12UnionHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\O14UnionHelper.cs">
+      <Link>GeneratedCode\O14UnionHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\O15UnionHelper.cs">
+      <Link>GeneratedCode\O15UnionHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\PartParitalDef.cs">
+      <Link>GeneratedCode\PartParitalDef.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\PartialSemanticConstraintRegistry.cs">
+      <Link>GeneratedCode\PartialSemanticConstraintRegistry.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\RootElementFactory.cs">
+      <Link>GeneratedCode\RootElementFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\package.cs">
+      <Link>GeneratedCode\package.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas-microsoft-com_office_excel.cs">
+      <Link>GeneratedCode\schemas-microsoft-com_office_excel.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas-microsoft-com_office_office.cs">
+      <Link>GeneratedCode\schemas-microsoft-com_office_office.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas-microsoft-com_office_powerpoint.cs">
+      <Link>GeneratedCode\schemas-microsoft-com_office_powerpoint.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas-microsoft-com_office_word.cs">
+      <Link>GeneratedCode\schemas-microsoft-com_office_word.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas-microsoft-com_vml.cs">
+      <Link>GeneratedCode\schemas-microsoft-com_vml.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_microsoft_com_ink_2010_main.cs">
+      <Link>GeneratedCode\schemas_microsoft_com_ink_2010_main.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_microsoft_com_office_2006_01_customui.cs">
+      <Link>GeneratedCode\schemas_microsoft_com_office_2006_01_customui.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_microsoft_com_office_2006_activeX.cs">
+      <Link>GeneratedCode\schemas_microsoft_com_office_2006_activeX.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_microsoft_com_office_2006_coverPageProps.cs">
+      <Link>GeneratedCode\schemas_microsoft_com_office_2006_coverPageProps.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_microsoft_com_office_2006_customDocumentInformationPanel.cs">
+      <Link>GeneratedCode\schemas_microsoft_com_office_2006_customDocumentInformationPanel.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_microsoft_com_office_2006_metadata_contentType.cs">
+      <Link>GeneratedCode\schemas_microsoft_com_office_2006_metadata_contentType.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_microsoft_com_office_2006_metadata_customXsn.cs">
+      <Link>GeneratedCode\schemas_microsoft_com_office_2006_metadata_customXsn.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_microsoft_com_office_2006_metadata_longProperties.cs">
+      <Link>GeneratedCode\schemas_microsoft_com_office_2006_metadata_longProperties.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_microsoft_com_office_2006_metadata_properties_metaAttributes.cs">
+      <Link>GeneratedCode\schemas_microsoft_com_office_2006_metadata_properties_metaAttributes.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_microsoft_com_office_2009_07_customui.cs">
+      <Link>GeneratedCode\schemas_microsoft_com_office_2009_07_customui.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_microsoft_com_office_drawing_2007_8_2_chart.cs">
+      <Link>GeneratedCode\schemas_microsoft_com_office_drawing_2007_8_2_chart.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_microsoft_com_office_drawing_2008_diagram.cs">
+      <Link>GeneratedCode\schemas_microsoft_com_office_drawing_2008_diagram.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_microsoft_com_office_drawing_2010_chartDrawing.cs">
+      <Link>GeneratedCode\schemas_microsoft_com_office_drawing_2010_chartDrawing.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_microsoft_com_office_drawing_2010_compatibility.cs">
+      <Link>GeneratedCode\schemas_microsoft_com_office_drawing_2010_compatibility.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_microsoft_com_office_drawing_2010_diagram.cs">
+      <Link>GeneratedCode\schemas_microsoft_com_office_drawing_2010_diagram.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_microsoft_com_office_drawing_2010_main.cs">
+      <Link>GeneratedCode\schemas_microsoft_com_office_drawing_2010_main.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_microsoft_com_office_drawing_2010_picture.cs">
+      <Link>GeneratedCode\schemas_microsoft_com_office_drawing_2010_picture.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_microsoft_com_office_drawing_2010_slicer.cs">
+      <Link>GeneratedCode\schemas_microsoft_com_office_drawing_2010_slicer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_microsoft_com_office_drawing_2012_chart.cs">
+      <Link>GeneratedCode\schemas_microsoft_com_office_drawing_2012_chart.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_microsoft_com_office_drawing_2012_chartStyle.cs">
+      <Link>GeneratedCode\schemas_microsoft_com_office_drawing_2012_chartStyle.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_microsoft_com_office_drawing_2012_main.cs">
+      <Link>GeneratedCode\schemas_microsoft_com_office_drawing_2012_main.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_microsoft_com_office_drawing_2012_timeslicer.cs">
+      <Link>GeneratedCode\schemas_microsoft_com_office_drawing_2012_timeslicer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_microsoft_com_office_excel_2006_main.cs">
+      <Link>GeneratedCode\schemas_microsoft_com_office_excel_2006_main.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_microsoft_com_office_excel_2010_spreadsheetDrawing.cs">
+      <Link>GeneratedCode\schemas_microsoft_com_office_excel_2010_spreadsheetDrawing.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_microsoft_com_office_powerpoint_2010_main.cs">
+      <Link>GeneratedCode\schemas_microsoft_com_office_powerpoint_2010_main.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_microsoft_com_office_powerpoint_2012_main.cs">
+      <Link>GeneratedCode\schemas_microsoft_com_office_powerpoint_2012_main.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_microsoft_com_office_powerpoint_2012_roamingSettings.cs">
+      <Link>GeneratedCode\schemas_microsoft_com_office_powerpoint_2012_roamingSettings.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_microsoft_com_office_spreadsheetml_2009_9_main.cs">
+      <Link>GeneratedCode\schemas_microsoft_com_office_spreadsheetml_2009_9_main.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_microsoft_com_office_spreadsheetml_2010_11_ac.cs">
+      <Link>GeneratedCode\schemas_microsoft_com_office_spreadsheetml_2010_11_ac.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_microsoft_com_office_spreadsheetml_2010_11_main.cs">
+      <Link>GeneratedCode\schemas_microsoft_com_office_spreadsheetml_2010_11_main.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_microsoft_com_office_spreadsheetml_2011_1_ac.cs">
+      <Link>GeneratedCode\schemas_microsoft_com_office_spreadsheetml_2011_1_ac.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_microsoft_com_office_thememl_2012_main.cs">
+      <Link>GeneratedCode\schemas_microsoft_com_office_thememl_2012_main.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_microsoft_com_office_webextensions_taskpanes_2010_11.cs">
+      <Link>GeneratedCode\schemas_microsoft_com_office_webextensions_taskpanes_2010_11.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_microsoft_com_office_webextensions_webextension_2010_11.cs">
+      <Link>GeneratedCode\schemas_microsoft_com_office_webextensions_webextension_2010_11.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_microsoft_com_office_word_2006_wordml.cs">
+      <Link>GeneratedCode\schemas_microsoft_com_office_word_2006_wordml.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_microsoft_com_office_word_2010_wordml.cs">
+      <Link>GeneratedCode\schemas_microsoft_com_office_word_2010_wordml.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_microsoft_com_office_word_2010_wordprocessingCanvas.cs">
+      <Link>GeneratedCode\schemas_microsoft_com_office_word_2010_wordprocessingCanvas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_microsoft_com_office_word_2010_wordprocessingDrawing.cs">
+      <Link>GeneratedCode\schemas_microsoft_com_office_word_2010_wordprocessingDrawing.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_microsoft_com_office_word_2010_wordprocessingGroup.cs">
+      <Link>GeneratedCode\schemas_microsoft_com_office_word_2010_wordprocessingGroup.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_microsoft_com_office_word_2010_wordprocessingShape.cs">
+      <Link>GeneratedCode\schemas_microsoft_com_office_word_2010_wordprocessingShape.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_microsoft_com_office_word_2012_wordml.cs">
+      <Link>GeneratedCode\schemas_microsoft_com_office_word_2012_wordml.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_microsoft_com_office_word_2012_wordprocessingDrawing.cs">
+      <Link>GeneratedCode\schemas_microsoft_com_office_word_2012_wordprocessingDrawing.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_openxmlformats_org_drawingml_2006_chart.cs">
+      <Link>GeneratedCode\schemas_openxmlformats_org_drawingml_2006_chart.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_openxmlformats_org_drawingml_2006_chartDrawing.cs">
+      <Link>GeneratedCode\schemas_openxmlformats_org_drawingml_2006_chartDrawing.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_openxmlformats_org_drawingml_2006_compatibility.cs">
+      <Link>GeneratedCode\schemas_openxmlformats_org_drawingml_2006_compatibility.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_openxmlformats_org_drawingml_2006_diagram.cs">
+      <Link>GeneratedCode\schemas_openxmlformats_org_drawingml_2006_diagram.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_openxmlformats_org_drawingml_2006_lockedCanvas.cs">
+      <Link>GeneratedCode\schemas_openxmlformats_org_drawingml_2006_lockedCanvas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_openxmlformats_org_drawingml_2006_main.cs">
+      <Link>GeneratedCode\schemas_openxmlformats_org_drawingml_2006_main.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_openxmlformats_org_drawingml_2006_picture.cs">
+      <Link>GeneratedCode\schemas_openxmlformats_org_drawingml_2006_picture.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_openxmlformats_org_drawingml_2006_spreadsheetDrawing.cs">
+      <Link>GeneratedCode\schemas_openxmlformats_org_drawingml_2006_spreadsheetDrawing.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_openxmlformats_org_drawingml_2006_wordprocessingDrawing.cs">
+      <Link>GeneratedCode\schemas_openxmlformats_org_drawingml_2006_wordprocessingDrawing.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_openxmlformats_org_officeDocument_2006_bibliography.cs">
+      <Link>GeneratedCode\schemas_openxmlformats_org_officeDocument_2006_bibliography.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_openxmlformats_org_officeDocument_2006_characteristics.cs">
+      <Link>GeneratedCode\schemas_openxmlformats_org_officeDocument_2006_characteristics.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_openxmlformats_org_officeDocument_2006_custom-properties.cs">
+      <Link>GeneratedCode\schemas_openxmlformats_org_officeDocument_2006_custom-properties.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_openxmlformats_org_officeDocument_2006_customXml.cs">
+      <Link>GeneratedCode\schemas_openxmlformats_org_officeDocument_2006_customXml.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_openxmlformats_org_officeDocument_2006_docPropsVTypes.cs">
+      <Link>GeneratedCode\schemas_openxmlformats_org_officeDocument_2006_docPropsVTypes.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_openxmlformats_org_officeDocument_2006_extended-properties.cs">
+      <Link>GeneratedCode\schemas_openxmlformats_org_officeDocument_2006_extended-properties.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_openxmlformats_org_officeDocument_2006_math.cs">
+      <Link>GeneratedCode\schemas_openxmlformats_org_officeDocument_2006_math.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_openxmlformats_org_presentationml_2006_main.cs">
+      <Link>GeneratedCode\schemas_openxmlformats_org_presentationml_2006_main.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_openxmlformats_org_schemaLibrary_2006_main.cs">
+      <Link>GeneratedCode\schemas_openxmlformats_org_schemaLibrary_2006_main.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_openxmlformats_org_spreadsheetml_2006_main.cs">
+      <Link>GeneratedCode\schemas_openxmlformats_org_spreadsheetml_2006_main.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\schemas_openxmlformats_org_wordprocessingml_2006_main.cs">
+      <Link>GeneratedCode\schemas_openxmlformats_org_wordprocessingml_2006_main.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\www_w3_org_2003_04_emma.cs">
+      <Link>GeneratedCode\www_w3_org_2003_04_emma.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\www_w3_org_2003_InkML.cs">
+      <Link>GeneratedCode\www_w3_org_2003_InkML.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GeneratedCode\www_w3_org_XML_1998_namespace.cs">
+      <Link>GeneratedCode\www_w3_org_XML_1998_namespace.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\BinaryTypeEnums.cs">
+      <Link>ofapi\BinaryTypeEnums.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\DocumentTypeDetector.cs">
+      <Link>ofapi\DocumentTypeDetector.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\DocumentTypeEnum.cs">
+      <Link>ofapi\DocumentTypeEnum.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\ExtensionMethods.cs">
+      <Link>ofapi\ExtensionMethods.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\GlobalSuppressions.cs">
+      <Link>ofapi\GlobalSuppressions.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\HelperPartialClass.cs">
+      <Link>ofapi\HelperPartialClass.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\PackageDocument.cs">
+      <Link>ofapi\PackageDocument.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\RootElementFactory1.cs">
+      <Link>ofapi\RootElementFactory1.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\SchemaInfoAttribute.cs">
+      <Link>ofapi\SchemaInfoAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Sources1.cs">
+      <Link>ofapi\Sources1.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Wordprocessing.cs">
+      <Link>ofapi\Wordprocessing.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\ofapi.cs">
+      <Link>ofapi\ofapi.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Validation\DocumentValidator.cs">
+      <Link>ofapi\Validation\DocumentValidator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Validation\OpenXmlValidator.cs">
+      <Link>ofapi\Validation\OpenXmlValidator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Validation\ValidationContext.cs">
+      <Link>ofapi\Validation\ValidationContext.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Validation\ValidationErrorInfo.cs">
+      <Link>ofapi\Validation\ValidationErrorInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Validation\ValidationResources.Designer.cs">
+      <Link>ofapi\Validation\ValidationResources.Designer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Validation\ValidationResult.cs">
+      <Link>ofapi\Validation\ValidationResult.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Validation\ValidationSettings.cs">
+      <Link>ofapi\Validation\ValidationSettings.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Validation\ValidationTraverser.cs">
+      <Link>ofapi\Validation\ValidationTraverser.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Validation\WordprocessingDocumentValidator.cs">
+      <Link>ofapi\Validation\WordprocessingDocumentValidator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Validation\XmlPath.cs">
+      <Link>ofapi\Validation\XmlPath.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Validation\SchemaValidation\AllParticleValidator.cs">
+      <Link>ofapi\Validation\SchemaValidation\AllParticleValidator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Validation\SchemaValidation\AlternateContentValidator.cs">
+      <Link>ofapi\Validation\SchemaValidation\AlternateContentValidator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Validation\SchemaValidation\AnyParticleValidator.cs">
+      <Link>ofapi\Validation\SchemaValidation\AnyParticleValidator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Validation\SchemaValidation\AttributeConstraint.cs">
+      <Link>ofapi\Validation\SchemaValidation\AttributeConstraint.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Validation\SchemaValidation\BinDataTypes.cs">
+      <Link>ofapi\Validation\SchemaValidation\BinDataTypes.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Validation\SchemaValidation\ChoiceParticleValidator.cs">
+      <Link>ofapi\Validation\SchemaValidation\ChoiceParticleValidator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Validation\SchemaValidation\GroupParticleValidator.cs">
+      <Link>ofapi\Validation\SchemaValidation\GroupParticleValidator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Validation\SchemaValidation\ParticleConstraint.cs">
+      <Link>ofapi\Validation\SchemaValidation\ParticleConstraint.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Validation\SchemaValidation\ParticleValidator.cs">
+      <Link>ofapi\Validation\SchemaValidation\ParticleValidator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Validation\SchemaValidation\SchemaTypeData.cs">
+      <Link>ofapi\Validation\SchemaValidation\SchemaTypeData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Validation\SchemaValidation\SchemaTypeValidator.cs">
+      <Link>ofapi\Validation\SchemaValidation\SchemaTypeValidator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Validation\SchemaValidation\SchemaValidator.cs">
+      <Link>ofapi\Validation\SchemaValidation\SchemaValidator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Validation\SchemaValidation\SdbDataHead.cs">
+      <Link>ofapi\Validation\SchemaValidation\SdbDataHead.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Validation\SchemaValidation\SdbSchemaDatas.cs">
+      <Link>ofapi\Validation\SchemaValidation\SdbSchemaDatas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Validation\SchemaValidation\SequenceParticleValidator.cs">
+      <Link>ofapi\Validation\SchemaValidation\SequenceParticleValidator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Validation\SchemaValidation\SimpleTypes.cs">
+      <Link>ofapi\Validation\SchemaValidation\SimpleTypes.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Validation\SchemaValidation\UnionHelper.cs">
+      <Link>ofapi\Validation\SchemaValidation\UnionHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Validation\SemanticValidation\Enums.cs">
+      <Link>ofapi\Validation\SemanticValidation\Enums.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Validation\SemanticValidation\SemanticValidator.cs">
+      <Link>ofapi\Validation\SemanticValidation\SemanticValidator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Validation\SemanticValidation\SemanticConstraint\AttributeAbsentConditionToNonValue.cs">
+      <Link>ofapi\Validation\SemanticValidation\SemanticConstraint\AttributeAbsentConditionToNonValue.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Validation\SemanticValidation\SemanticConstraint\AttributeAbsentConditionToValue.cs">
+      <Link>ofapi\Validation\SemanticValidation\SemanticConstraint\AttributeAbsentConditionToValue.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Validation\SemanticValidation\SemanticConstraint\AttributeCannotOmitConstraint.cs">
+      <Link>ofapi\Validation\SemanticValidation\SemanticConstraint\AttributeCannotOmitConstraint.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Validation\SemanticValidation\SemanticConstraint\AttributeMutualExclusive.cs">
+      <Link>ofapi\Validation\SemanticValidation\SemanticConstraint\AttributeMutualExclusive.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Validation\SemanticValidation\SemanticConstraint\AttributeRequiredConditionToValue.cs">
+      <Link>ofapi\Validation\SemanticValidation\SemanticConstraint\AttributeRequiredConditionToValue.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Validation\SemanticValidation\SemanticConstraint\AttributeValueConditionToAnother.cs">
+      <Link>ofapi\Validation\SemanticValidation\SemanticConstraint\AttributeValueConditionToAnother.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Validation\SemanticValidation\SemanticConstraint\AttributeValueLengthConstraint.cs">
+      <Link>ofapi\Validation\SemanticValidation\SemanticConstraint\AttributeValueLengthConstraint.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Validation\SemanticValidation\SemanticConstraint\AttributeValueLessEqualToAnother.cs">
+      <Link>ofapi\Validation\SemanticValidation\SemanticConstraint\AttributeValueLessEqualToAnother.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Validation\SemanticValidation\SemanticConstraint\AttributeValuePatternConstraint.cs">
+      <Link>ofapi\Validation\SemanticValidation\SemanticConstraint\AttributeValuePatternConstraint.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Validation\SemanticValidation\SemanticConstraint\AttributeValueRangeConstraint.cs">
+      <Link>ofapi\Validation\SemanticValidation\SemanticConstraint\AttributeValueRangeConstraint.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Validation\SemanticValidation\SemanticConstraint\AttributeValueSetConstraint.cs">
+      <Link>ofapi\Validation\SemanticValidation\SemanticConstraint\AttributeValueSetConstraint.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Validation\SemanticValidation\SemanticConstraint\IndexReferenceConstraint.cs">
+      <Link>ofapi\Validation\SemanticValidation\SemanticConstraint\IndexReferenceConstraint.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Validation\SemanticValidation\SemanticConstraint\ReferenceExistConstraint.cs">
+      <Link>ofapi\Validation\SemanticValidation\SemanticConstraint\ReferenceExistConstraint.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Validation\SemanticValidation\SemanticConstraint\RelationshipExistConstraint.cs">
+      <Link>ofapi\Validation\SemanticValidation\SemanticConstraint\RelationshipExistConstraint.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Validation\SemanticValidation\SemanticConstraint\RelationshipTypeConstraint.cs">
+      <Link>ofapi\Validation\SemanticValidation\SemanticConstraint\RelationshipTypeConstraint.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Validation\SemanticValidation\SemanticConstraint\RootAttributeUniqueConstraint.cs">
+      <Link>ofapi\Validation\SemanticValidation\SemanticConstraint\RootAttributeUniqueConstraint.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Validation\SemanticValidation\SemanticConstraint\SemanticConstraint.cs">
+      <Link>ofapi\Validation\SemanticValidation\SemanticConstraint\SemanticConstraint.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Validation\SemanticValidation\SemanticConstraint\UniqueAttributeValueConstraint.cs">
+      <Link>ofapi\Validation\SemanticValidation\SemanticConstraint\UniqueAttributeValueConstraint.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ofapi\Validation\SemanticValidation\SemanticConstraintRegistry\SemanticConstraintRegistry.cs">
+      <Link>ofapi\Validation\SemanticValidation\SemanticConstraintRegistry\SemanticConstraintRegistry.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Packaging\Check.cs">
+      <Link>Packaging\Check.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Packaging\CompressionOption.cs">
+      <Link>Packaging\CompressionOption.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Packaging\PackUriHelper.cs">
+      <Link>Packaging\PackUriHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Packaging\PackUriParser.cs">
+      <Link>Packaging\PackUriParser.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Packaging\Package.cs">
+      <Link>Packaging\Package.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Packaging\PackagePart.cs">
+      <Link>Packaging\PackagePart.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Packaging\PackagePartCollection.cs">
+      <Link>Packaging\PackagePartCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Packaging\PackageProperties.cs">
+      <Link>Packaging\PackageProperties.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Packaging\PackagePropertiesPart.cs">
+      <Link>Packaging\PackagePropertiesPart.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Packaging\PackageRelationship.cs">
+      <Link>Packaging\PackageRelationship.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Packaging\PackageRelationshipCollection.cs">
+      <Link>Packaging\PackageRelationshipCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Packaging\TargetMode.cs">
+      <Link>Packaging\TargetMode.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Packaging\ZipPackage.cs">
+      <Link>Packaging\ZipPackage.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Packaging\ZipPackagePart.cs">
+      <Link>Packaging\ZipPackagePart.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Packaging\ZipPartStream.cs">
+      <Link>Packaging\ZipPartStream.cs</Link>
+    </Compile>
+    <Compile Include="Zip\ZipStorer.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <None Include="..\..\Framework\CodeTemplate.resx">
+      <Link>Framework\CodeTemplate.resx</Link>
+    </None>
+    <None Include="..\..\Framework\ExceptionMessages.resx">
+      <Link>Framework\ExceptionMessages.resx</Link>
+    </None>
+    <None Include="..\..\GeneratedCode\O12SchemaConstraintDatas.bin">
+      <Link>GeneratedCode\O12SchemaConstraintDatas.bin</Link>
+    </None>
+    <None Include="..\..\GeneratedCode\O14SchemaConstraintDatas.bin">
+      <Link>GeneratedCode\O14SchemaConstraintDatas.bin</Link>
+    </None>
+    <None Include="..\..\GeneratedCode\O15SchemaConstraintDatas.bin">
+      <Link>GeneratedCode\O15SchemaConstraintDatas.bin</Link>
+    </None>
+    <None Include="..\..\ofapi\makefile">
+      <Link>ofapi\makefile</Link>
+    </None>
+    <None Include="..\..\ofapi\Validation\ValidationResources.resx">
+      <Link>ofapi\Validation\ValidationResources.resx</Link>
+    </None>
+  </ItemGroup>
+</Project>
