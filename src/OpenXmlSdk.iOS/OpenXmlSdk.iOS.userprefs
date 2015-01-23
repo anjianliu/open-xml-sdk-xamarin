@@ -1,10 +1,12 @@
 ﻿<Properties StartupItem="OpenXmlSdk.iOS.TestClient/OpenXmlSdk.iOS.TestClient.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../Packaging/ZipPackage.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget. Lepki iPad" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="OpenXmlSdk.iOS.TestClient/OpenXmlSdk.iOS.TestClientViewController.cs">
     <Files>
-      <File FileName="../Framework/MediaDataPart.cs" Line="36" Column="36" />
-      <File FileName="../Packaging/ZipPackage.cs" Line="13" Column="13" />
-      <File FileName="OpenXmlSdk.iOS/Zip/ZipStorer.cs" Line="33" Column="33" />
+      <File FileName="../Framework/MediaDataPart.cs" Line="1" Column="1" />
+      <File FileName="../Packaging/ZipPackage.cs" Line="1" Column="1" />
+      <File FileName="OpenXmlSdk.iOS/Zip/ZipStorer.cs" Line="1" Column="1" />
+      <File FileName="../Packaging/Check.cs" Line="51" Column="51" />
+      <File FileName="OpenXmlSdk.iOS.TestClient/OpenXmlSdk.iOS.TestClientViewController.cs" Line="5" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
