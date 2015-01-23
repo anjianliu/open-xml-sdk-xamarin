@@ -32,9 +32,7 @@ namespace OpenXmlSdk.iOS.TestClient
 			base.ViewDidLoad ();
 			
 			// Perform any additional setup after loading the view, typically from a nib.
-			var doc = new WordprocessingDocument ();
-			if (doc != null) {
-			}
+
 		}
 
 		public override void ViewWillAppear (bool animated)
@@ -57,6 +55,25 @@ namespace OpenXmlSdk.iOS.TestClient
 			base.ViewDidDisappear (animated);
 		}
 
+
+		partial void UIButton5_TouchUpInside (UIButton sender)
+		{
+			sender.SetTitle("You Clicked",UIControlState.Normal);
+			try
+			{
+				var doc = new WordprocessingDocument ();
+				if (doc != null) 
+				{
+					sender.SetTitle("Yes",UIControlState.Normal);
+				}
+				else {			
+					sender.SetTitle("No",UIControlState.Normal);
+				}
+			}
+			catch(Exception ex){
+				Console.WriteLine(ex);
+			}
+		}
 		#endregion
 	}
 }

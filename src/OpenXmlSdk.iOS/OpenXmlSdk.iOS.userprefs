@@ -1,16 +1,21 @@
 ﻿<Properties StartupItem="OpenXmlSdk.iOS.TestClient/OpenXmlSdk.iOS.TestClient.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget. Lepki iPad" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPad2.8.1" />
   <MonoDevelop.Ide.Workbench ActiveDocument="OpenXmlSdk.iOS.TestClient/OpenXmlSdk.iOS.TestClientViewController.cs">
     <Files>
       <File FileName="../Framework/MediaDataPart.cs" Line="1" Column="1" />
       <File FileName="../Packaging/ZipPackage.cs" Line="1" Column="1" />
       <File FileName="OpenXmlSdk.iOS/Zip/ZipStorer.cs" Line="1" Column="1" />
       <File FileName="../Packaging/Check.cs" Line="51" Column="51" />
-      <File FileName="OpenXmlSdk.iOS.TestClient/OpenXmlSdk.iOS.TestClientViewController.cs" Line="5" Column="5" />
+      <File FileName="OpenXmlSdk.iOS.TestClient/OpenXmlSdk.iOS.TestClientViewController.cs" Line="49" Column="49" />
+      <File FileName="OpenXmlSdk.iOS.TestClient/Main.cs" Line="24" Column="24" />
+      <File FileName="OpenXmlSdk.iOS.TestClient/OpenXmlSdk.iOS.TestClientViewController.designer.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/chris/open-xml-sdk-xamarin/src/OpenXmlSdk.iOS/OpenXmlSdk.iOS.TestClient/OpenXmlSdk.iOS.TestClientViewController.cs" line="64" column="49" />
+      <Breakpoint file="/Users/chris/open-xml-sdk-xamarin/src/OpenXmlSdk.iOS/OpenXmlSdk.iOS.TestClient/OpenXmlSdk.iOS.TestClientViewController.cs" line="67" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
