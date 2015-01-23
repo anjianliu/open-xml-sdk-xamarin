@@ -8,7 +8,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Xml;
 using System.Collections;
-using OpenXmlAndroid.Packaging;
+using OpenXmlSdk.Xamarin.Packaging;
 
 namespace DocumentFormat.OpenXml.Packaging
 {

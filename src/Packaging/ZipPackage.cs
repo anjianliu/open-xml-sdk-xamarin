@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Xml;
 using OpenXmlAndroid.Zip;
 
-namespace OpenXmlAndroid.Packaging
+namespace OpenXmlSdk.Xamarin.Packaging
 {
 	class UriComparer : IEqualityComparer<Uri>
 	{

@@ -12,7 +12,7 @@ using System.Runtime.Serialization;
 using System.Globalization;
 using DocumentFormat.OpenXml;
 using System.Linq;
-using OpenXmlAndroid.Packaging;
+using OpenXmlSdk.Xamarin.Packaging;
 using OpenXmlSdk;
 
 namespace DocumentFormat.OpenXml.Packaging

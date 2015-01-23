@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.IO;
 using System.Collections.Specialized;
-using OpenXmlAndroid.Packaging;
+using OpenXmlSdk.Xamarin.Packaging;
 using OpenXmlSdk;
 
 namespace DocumentFormat.OpenXml.Packaging

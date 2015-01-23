@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using OpenXmlAndroid.Zip;
 
-namespace OpenXmlAndroid.Packaging
+namespace OpenXmlSdk.Xamarin.Packaging
 {
     public sealed class ZipPackagePart : PackagePart
     {

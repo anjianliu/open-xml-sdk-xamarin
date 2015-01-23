@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Xml;
 using DocumentFormat.OpenXml.Packaging;
 
-namespace OpenXmlAndroid.Packaging
+namespace OpenXmlSdk.Xamarin.Packaging
 {
     public abstract class PackagePart
     {

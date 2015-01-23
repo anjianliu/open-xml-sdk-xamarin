@@ -9,7 +9,7 @@ using System.Diagnostics;
 using System.Globalization;
 using System.Xml;
 using System.Linq;
-using OpenXmlAndroid.Packaging;
+using OpenXmlSdk.Xamarin.Packaging;
 using OpenXmlSdk;
 
 namespace DocumentFormat.OpenXml.Packaging

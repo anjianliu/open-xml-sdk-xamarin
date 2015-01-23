@@ -556,22 +556,52 @@
     <Compile Include="..\..\ofapi\Validation\SemanticValidation\SemanticConstraintRegistry\SemanticConstraintRegistry.cs">
       <Link>ofapi\Validation\SemanticValidation\SemanticConstraintRegistry\SemanticConstraintRegistry.cs</Link>
     </Compile>
-    <Compile Include="Packaging\Check.cs" />
-    <Compile Include="Packaging\CompressionOption.cs" />
-    <Compile Include="Packaging\Package.cs" />
-    <Compile Include="Packaging\PackagePart.cs" />
-    <Compile Include="Packaging\PackagePartCollection.cs" />
-    <Compile Include="Packaging\PackageProperties.cs" />
-    <Compile Include="Packaging\PackagePropertiesPart.cs" />
-    <Compile Include="Packaging\PackageRelationship.cs" />
-    <Compile Include="Packaging\PackageRelationshipCollection.cs" />
-    <Compile Include="Packaging\PackUriHelper.cs" />
-    <Compile Include="Packaging\PackUriParser.cs" />
-    <Compile Include="Packaging\TargetMode.cs" />
-    <Compile Include="Packaging\ZipPackage.cs" />
-    <Compile Include="Packaging\ZipPackagePart.cs" />
-    <Compile Include="Packaging\ZipPartStream.cs" />
     <Compile Include="Zip\ZipStorer.cs" />
+    <Compile Include="..\..\Packaging\Check.cs">
+      <Link>Packaging\Check.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Packaging\CompressionOption.cs">
+      <Link>Packaging\CompressionOption.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Packaging\Package.cs">
+      <Link>Packaging\Package.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Packaging\PackagePart.cs">
+      <Link>Packaging\PackagePart.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Packaging\PackagePartCollection.cs">
+      <Link>Packaging\PackagePartCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Packaging\PackageProperties.cs">
+      <Link>Packaging\PackageProperties.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Packaging\PackagePropertiesPart.cs">
+      <Link>Packaging\PackagePropertiesPart.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Packaging\PackageRelationship.cs">
+      <Link>Packaging\PackageRelationship.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Packaging\PackageRelationshipCollection.cs">
+      <Link>Packaging\PackageRelationshipCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Packaging\PackUriHelper.cs">
+      <Link>Packaging\PackUriHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Packaging\PackUriParser.cs">
+      <Link>Packaging\PackUriParser.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Packaging\TargetMode.cs">
+      <Link>Packaging\TargetMode.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Packaging\ZipPackage.cs">
+      <Link>Packaging\ZipPackage.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Packaging\ZipPackagePart.cs">
+      <Link>Packaging\ZipPackagePart.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Packaging\ZipPartStream.cs">
+      <Link>Packaging\ZipPartStream.cs</Link>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -608,7 +638,7 @@
     <Folder Include="Framework\" />
     <Folder Include="GeneratedCode\" />
     <Folder Include="ofapi\" />
-    <Folder Include="Packaging\" />
     <Folder Include="Zip\" />
+    <Folder Include="Packaging\" />
   </ItemGroup>
 </Project>

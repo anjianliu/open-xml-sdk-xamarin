@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OpenXmlAndroid.Packaging
+namespace OpenXmlSdk.Xamarin.Packaging
 {
     public class PackageRelationshipCollection : IEnumerable<PackageRelationship>, IEnumerable
     {

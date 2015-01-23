@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using DocumentFormat.OpenXml.Packaging;
 
-namespace OpenXmlAndroid.Packaging
+namespace OpenXmlSdk.Xamarin.Packaging
 {
     internal static class Check
     {
